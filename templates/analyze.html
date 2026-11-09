@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Analizar correo</h1>
+<p>Sube una captura (PNG o JPG, máximo 5 MB) del correo sospechoso.</p>
+<p class="note">No subas correos con datos personales reales. Usa ejemplos o tapa la información sensible.</p>
+<form method="post" enctype="multipart/form-data">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label>Imagen <input type="file" name="image" accept="image/png,image/jpeg" required></label>
+  <button type="submit">Analizar</button>
+</form>
+{% endblock %}

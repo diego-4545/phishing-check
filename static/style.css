@@ -6,3 +6,8 @@ form input { display: block; width: 100%; padding: .5rem; box-sizing: border-box
 button { padding: .5rem 1rem; cursor: pointer; }
 .inline { display: inline; }
 .flash { background: #fff3cd; padding: .5rem 1rem; border-radius: 4px; }
+.verdict { font-size: 1.4rem; font-weight: bold; }
+.phishing { color: #b00020; }
+.sospechoso { color: #b26a00; }
+.legitimo { color: #1b7f3b; }
+.note { font-size: .9rem; color: #555; }

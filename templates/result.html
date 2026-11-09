@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Resultado</h1>
+<p class="verdict {{ a.verdict }}">{{ a.verdict|upper }} ({{ a.confidence }}% de confianza)</p>
+<h2>Señales detectadas</h2>
+<ul>
+  {% for s in signals %}<li>{{ s }}</li>{% endfor %}
+</ul>
+<h2>Recomendación</h2>
+<p>{{ a.recommendation }}</p>
+<p class="note">Este análisis es una ayuda, no un veredicto definitivo. Ante la duda, verifica con el remitente por otro medio.</p>
+<p><a href="{{ url_for('analyze') }}">Analizar otro</a> · <a href="{{ url_for('history') }}">Historial</a></p>
+{% endblock %}

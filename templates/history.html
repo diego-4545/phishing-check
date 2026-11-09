@@ -4,7 +4,7 @@
 {% if analyses %}
   <ul>
   {% for a in analyses %}
-    <li>{{ a.created_at }} - {{ a.verdict }} ({{ a.confidence }}%)</li>
+    <li><a href="{{ url_for('analysis_detail', analysis_id=a.id) }}">{{ a.created_at }}</a> - {{ a.verdict }} ({{ a.confidence }}%) - {{ a.filename }}</li>
   {% endfor %}
   </ul>
 {% else %}
