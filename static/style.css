@@ -1,0 +1,8 @@
+body { font-family: system-ui, sans-serif; max-width: 640px; margin: 0 auto; padding: 1rem; line-height: 1.5; }
+nav { display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid #ccc; }
+nav a { margin-right: .75rem; }
+form label { display: block; margin: .75rem 0; }
+form input { display: block; width: 100%; padding: .5rem; box-sizing: border-box; }
+button { padding: .5rem 1rem; cursor: pointer; }
+.inline { display: inline; }
+.flash { background: #fff3cd; padding: .5rem 1rem; border-radius: 4px; }

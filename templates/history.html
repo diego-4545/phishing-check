@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Historial</h1>
+{% if analyses %}
+  <ul>
+  {% for a in analyses %}
+    <li>{{ a.created_at }} - {{ a.verdict }} ({{ a.confidence }}%)</li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>Aún no has analizado ningún correo.</p>
+{% endif %}
+{% endblock %}

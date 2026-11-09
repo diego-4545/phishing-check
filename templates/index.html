@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>¿Es phishing?</h1>
+<p>Sube una captura de un correo sospechoso y obtén un análisis de sus señales.</p>
+{% if not session.get('user_id') %}
+  <p><a href="{{ url_for('register') }}">Crea una cuenta</a> para empezar.</p>
+{% endif %}
+{% endblock %}
